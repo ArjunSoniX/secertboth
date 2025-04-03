@@ -1,0 +1,2 @@
+# secertboth
+secret both
