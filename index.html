@@ -3,45 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Secret App</title>
+  <title>The Secret Book</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #000;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .hero {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      padding: 20px;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px;
+      flex-wrap: wrap;
     }
-    .banner {
-      width: 100%;
-      max-width: 600px;
+
+    .content {
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .content h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .content h2 {
+      color: orange;
       margin-bottom: 20px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      transition: transform 0.2s ease-in-out;
     }
-    .banner:hover {
-      transform: scale(1.02);
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
-    img {
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 2px solid orange;
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: orange;
+      color: black;
+    }
+
+    .phone-image {
+      max-width: 300px;
+      margin: 20px;
+    }
+
+    .phone-image img {
       width: 100%;
-      display: block;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content h1 {
+        font-size: 32px;
+      }
+
+      .content p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- First Banner -->
+  <div class="hero">
+    <div class="content">
+      <h1>The Secret Book</h1>
+      <h2>BEHIND EVERY SUCCESS</h2>
+      <p>This is one of the best self-help books for everyone. Unlock your full potential with practical steps.</p>
+      <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" class="btn">BUY ON PLAY STORE</a>
+    </div>
+    <div class="phone-image">
+      <img src="https://raw.githubusercontent.com/arjunsonix/secertboth/main/book-cover.png" alt="Book Cover" />
+    </div>
+  </div>
 
-  <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" class="banner">
-    <img src="https://raw.githubusercontent.com/arjunsonix/secertboth/main/banner1.jpg" alt="Banner 1" />
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" class="banner">
-    <img src="https://raw.githubusercontent.com/arjunsonix/secertboth/main/banner2.jpg" alt="Banner 2" />
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" class="banner">
-    <img src="https://raw.githubusercontent.com/arjunsonix/secertboth/main/banner3.jpg" alt="Banner 3" />
-  </a>
+  <!-- Second Banner -->
+  <div class="hero">
+    <div class="content">
+      <h1>Automation Guide</h1>
+      <h2>MAKE LIFE EASY</h2>
+      <p>Learn how automation can transform your workflow and save hours of time daily. Start your journey to efficiency.</p>
+      <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" class="btn">BUY ON PLAY STORE</a>
+    </div>
+    <div class="phone-image">
+      <img src="https://raw.githubusercontent.com/arjunsonix/secertboth/main/banner2.png" alt="Automation Banner" />
+    </div>
+  </div>
 
+  <!-- Third Banner -->
+  <div class="hero">
+    <div class="content">
+      <h1>Success Blueprint</h1>
+      <h2>PLAN. EXECUTE. WIN.</h2>
+      <p>This guide gives you the strategies of top achievers. Discover the blueprint to manifest your goals into reality.</p>
+      <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" class="btn">BUY ON PLAY STORE</a>
+    </div>
+    <div class="phone-image">
+      <img src="https://raw.githubusercontent.com/arjunsonix/secertboth/main/banner2.png" alt="Success Blueprint" />
+    </div>
+  </div>
 </body>
 </html>
