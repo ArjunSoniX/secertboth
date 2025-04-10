@@ -5,113 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Secret Book: Behind Every Success</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfdfd;
-      color: #111;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    .hero {
-      background-color: #000;
-      color: white;
-      padding: 30px 15px;
-      text-align: center;
-    }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #111;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero {
+    background-color: #000;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .cta-button:hover {
+    background-color: #e65c00;
+  }
+
+  .content-section {
+    padding: 30px 15px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .content-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .ratings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .rating-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .rating-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+
+  .rating-stars {
+    color: #ffcc00;
+    font-size: 1.2rem;
+  }
+
+  .testimonial {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .faq h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    color: white;
+  }
+
+  @media (max-width: 600px) {
     .hero h1 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-    .cta-button {
-      background-color: #ff6600;
-      color: white;
-      padding: 14px 28px;
-      border: none;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .cta-button:hover {
-      background-color: #e65c00;
-    }
-    .content-section {
-      padding: 30px 15px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-    .content-section h2 {
       font-size: 1.6rem;
-      margin-bottom: 20px;
     }
-    .content-section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
+
+    .hero p, .content-section p {
+      font-size: 0.95rem;
     }
-    .ratings {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
+
     .rating-card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      width: 220px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
+      width: 90%;
     }
-    .rating-card img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-    .rating-stars {
-      color: #ffcc00;
-      font-size: 1.2rem;
-    }
-    .testimonial {
-      font-style: italic;
-      margin-bottom: 20px;
-    }
-    .faq h3 {
-      font-size: 1.2rem;
-      margin: 20px 0 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #000;
-      color: white;
-    }
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 1.6rem;
-      }
-      .hero p, .content-section p {
-        font-size: 0.95rem;
-      }
-      .rating-card {
-        width: 90%;
-      }
-    }
-  </style>
+  }
+</style>
+
 </head>
 <body>
   <section class="hero">
@@ -120,7 +141,9 @@
     </div>
     <h1>Discover the Secret Behind Every Great Success</h1>
     <p>Learn the common strengths that shaped every successful person – and how you can follow the same path.</p>
-    <button class="cta-button">Unlock The Secret Now – Only $5.99</button>
+    <button class="cta-button" onclick="window.location.href='https://payments.cashfree.com/links?code=k8cmjqkoj3r0'">
+      Unlock The Secret Now – Only $5.99
+    </button>
   </section>
 
   <section class="content-section">
@@ -177,7 +200,9 @@
 
   <section class="content-section">
     <h2>Don’t Wait. Your Journey Starts Now.</h2>
-    <button class="cta-button">Get Instant Access – $5.99</button>
+    <button class="cta-button" onclick="window.location.href='https://payments.cashfree.com/links?code=k8cmjqkoj3r0'">
+      Get Instant Access – $5.99
+    </button>
   </section>
 
   <footer>
